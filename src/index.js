@@ -126,11 +126,12 @@ let keyAction = e => {
 	eraseFigure();
 		switch(e.keyCode){
 	        case 27:  // escape (pause)
-	        	trigger? clearInterval(id): setInterval(work, 500);
+	        	trigger? clearInterval(id): id = setInterval(work, 500);
 	        	trigger = !trigger;
 	        	break;
 	        
 	         case 115: // f4 (new game)
+	         	trigger = true
 	         	clearInterval(id);
 	         	reset()
 	        	init()
