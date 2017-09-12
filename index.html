@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tetris</title>
+	<meta charset="utf-8">
+	<script defer src='src/index.js'></script>
+	<style>
+
+		td{
+			width:10px;
+			height: 10px;
+			border: 1px grey solid;
+
+		}
+		.blank{
+			background: white;
+		}
+		.filled-cell{
+			background: black;
+		}
+		table{
+			border: 2px black solid;
+		}
+
+
+	</style>
+
+</head>
+<body>
+<p>To pause the game, press escape </p>
+<p>To start new game, press f4</p>
+<p>Use arrows for figure moving, 'R' rotates figure </p>
+
+<p class="count"></p>
+<div id="field"></div>
+
+</body>
+</html>
